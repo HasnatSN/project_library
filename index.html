@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="script.js" defer />
+    <script src="script.js" defer></script>
     <title>Library</title>
   </head>
   <body>
@@ -15,21 +15,21 @@
     </header>
     <main>
       <button id="add-book">+ Add book</button>
-      <div class="cards"></div>
+      <div id="cards"></div>
     </main>
     <footer>Copyright © 2022 HSN</footer>
 
-    <div class="modal-bg bg-active">
-      <form action="script.js" method="post">
+    <div class="modal-bg">
+      <form action="" method="post" id="f1">
         <h3>New Book:</h2>
-        <input class="bars" type="text" name="title" placeholder="Title" required/>
-        <input class="bars" type="text" name="author" placeholder="Author" required />
-        <input class="bars" type="number" name="pages" name="pages" id="" placeholder="Pages"  required/>
+        <input class="bars" type="text" id="title" placeholder="Title" required/>
+        <input class="bars" type="text" id="author" placeholder="Author" required />
+        <input class="bars" type="number" id="pages" name="pages" id="" placeholder="Pages"  required/>
         <div class="read-div">
           <label for="read_check">Have you read it?</label>
           <input name="readStatus" type="checkbox" id="read_check" required/>
         </div>
-        <button class="green-btn" type="submit">Submit</button>
+        <button class="green-btn" form="f1" type="submit">Submit</button>
       </form>
     </div>
   </body>

@@ -79,6 +79,10 @@ input[type="checkbox"] {
   accent-color: var(--slate-10);
 }
 
+button:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0 0);
+}
+
 /* CLASSES */
 
 .modal-bg {
@@ -140,6 +144,38 @@ input[type="checkbox"] {
   flex-direction: column;
   border: 1px solid var(--slate-10);
   box-shadow: 0 1px 10px #cbd5e1;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  padding: 3rem 3rem ;
+}
+
+.remove-btn {
+  padding: 0.7rem;
+  font-size: 1.3rem;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--light-red);
+}
+
+.toggleRead {
+  padding: 0.7rem;
+  font-size: 1.3rem;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--light-green);
+}
+
+.not-read {
+  background-color: #b3bece;
+  color: var(--slate-10);
+}
+
+.book-title {
+  overflow: hidden;
+  max-width: 202px;
+  max-height: 50px;
 }
 
 /* IDs */

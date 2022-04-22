@@ -13,12 +13,14 @@ addBookBtn.addEventListener("click", () => {
 
 let library = [];
 
-function Book(title, author, pages, read, indexOfBook) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.indexOfBook = indexOfBook;
+class Book {
+  constructor(title, author, pages, read, indexOfBook) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+    this.indexOfBook = indexOfBook;
+  }
 }
 
 function addBookToLibrary() {
